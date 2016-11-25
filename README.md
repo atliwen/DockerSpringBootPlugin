@@ -21,7 +21,7 @@ docker-maven-plugin  完全免Dockerfile 文件
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <configuration>
-                    <imageName>${docker.image.prefix}/${project.artifactId}.demo</imageName>
+                    <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
                     <!--<dockerDirectory>src/main/docker</dockerDirectory>-->
                     <baseImage>java:8</baseImage>
                     <entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
